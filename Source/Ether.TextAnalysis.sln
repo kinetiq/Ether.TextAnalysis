@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ether.TextAnalysis", "Ether.TextAnalysis\Ether.TextAnalysis.csproj", "{0C4A0A63-FF82-4CA7-81A2-2C8F29E6EF52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentimentExample", "SentimentExample\SentimentExample.csproj", "{206AC858-D212-4364-BD3B-A2793D669FBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0C4A0A63-FF82-4CA7-81A2-2C8F29E6EF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C4A0A63-FF82-4CA7-81A2-2C8F29E6EF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C4A0A63-FF82-4CA7-81A2-2C8F29E6EF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{206AC858-D212-4364-BD3B-A2793D669FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{206AC858-D212-4364-BD3B-A2793D669FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{206AC858-D212-4364-BD3B-A2793D669FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{206AC858-D212-4364-BD3B-A2793D669FBE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

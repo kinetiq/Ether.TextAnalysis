@@ -24,7 +24,7 @@ namespace Ether.TextAnalysis.Internals
             Annotation doc = new Annotation(text);
             pipeline.annotate(doc);
 
-            //Validate result
+            //Validate
             var sentences = doc.get(typeof(CoreAnnotations.SentencesAnnotation));
 
             if (sentences == null)           
@@ -45,8 +45,9 @@ namespace Ether.TextAnalysis.Internals
         }
 
         /// <summary>
-        /// Uses a naive approach, which assumes that the longest sentence is the most relevant. Might also try
-        /// converting to decimal and averaging all the sentences scores...
+        /// Sentiment is scored on a sentence-by-sentence basis. In order to provide a sentiment
+        /// score for the entire block text, I rolled my own algorithm that weights each sentence's
+        /// score according to how much of the total text it encompasses.
         /// </summary>
         private Sentiments GetSentiment(ArrayList sentences) 
         {
