@@ -45,11 +45,13 @@ namespace Ether.TextAnalysis
         {
             if (string.IsNullOrWhiteSpace(modelFolder))
                 throw new InvalidOperationException("The AppSetting CoreNLP.ModelDirectory was not found. " +
-                                                    "This must be set to a folder containing the CoreNLP models jar, " +
+                                                    "This must be set to a folder containing the CoreNLP, " +
                                                     "which can be downloaded here: http://stanfordnlp.github.io/CoreNLP/");
 
             if (!Directory.Exists(modelFolder))
-                throw new InvalidOperationException("CoreNLP.ModelDirectory: directory not found.");
+                throw new InvalidOperationException("Model directory not found. Make sure the AppSetting " +
+                                                    "named CoreNLP.ModelDirectory exists and that the folder contains the training models." +
+                                                    "See the github page for details.");
         }
 
         /// <summary>
